@@ -25,8 +25,7 @@ A repository holding all the exercises I go through when learning golang
 
 	i := 52
 ```
-## Redeclaration
-## Shadowing
+## Redeclaration & Shadowing ( local variables overwrite global ones )
 You can redeclare variables in inner scopes but not in the same scope
 ## Visibility
 Scopes
@@ -36,17 +35,49 @@ Scopes
     block
         visible in block only
 ## Naming conventions
-Accronyms are all upper case - 
+camelCase
 
+Accronyms are all upper case - 
 ```var theURL```
 
 instead of 
 
 ```var theUrl```
+
 ## Type conversion
+Always explicit
+<type>()
+
+strconv for string conversions since casting will just point to ascii char
+
+## More
+All variables must be used ( strict linter )
 
 
 # Variable types
 ## Boolean
+```var b bool = true```
 ## Numbers
-## Text
+``` var i int = 12```
+### Boolean operators are supported ( and, or, xor )
+### e notation is supported
+### complex numbers are supported
+## String ( utf8[] )
+## Runes ( char, 32bit, represented as a int32)
+
+## constants
+
+## arrays
+var <name> = [<len>]<type>
+var a [5]int
+b := [5]int{1, 2, 3, 4, 5}
+var twoDimensional [2][3]int
+
+### Arrays are a value type by default
+### Pointers exist 
+```
+a := 5
+b := &a
+```
+
+1:58.40
