@@ -13,7 +13,7 @@ A repository holding all the exercises I go through when learning golang
 2. ```go mod init <module name>```
 
 ## Running a file
-```go <file_name>```
+```go run <file_name>```
 
 
 # Variables
