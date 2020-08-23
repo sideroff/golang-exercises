@@ -46,7 +46,7 @@ instead of
 
 ## Type conversion
 Always explicit
-<type>()
+```<type>()```
 
 strconv for string conversions since casting will just point to ascii char
 
@@ -68,10 +68,12 @@ All variables must be used ( strict linter )
 ## constants
 
 ## arrays
+```
 var <name> = [<len>]<type>
 var a [5]int
 b := [5]int{1, 2, 3, 4, 5}
 var twoDimensional [2][3]int
+```
 
 ### Arrays are a value type by default
 ### Pointers exist 
