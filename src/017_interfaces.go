@@ -97,4 +97,9 @@ func main() {
 	fmt.Println(bwc, ok)
 
 	// everything is interface{} (empty interface) similar to js object
+	var i interface{} = 5
+	var j interface{} = "5"
+	var k interface{} = true
+
+	fmt.Println(i, j, k)
 }
