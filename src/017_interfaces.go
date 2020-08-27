@@ -95,4 +95,6 @@ func main() {
 
 	bwc, ok := wc.(*BufferedWriterCloser)
 	fmt.Println(bwc, ok)
+
+	// everything is interface{} (empty interface) similar to js object
 }
